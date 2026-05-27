@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List</title>
+    <link rel="stylesheet" href="./Styles/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <script src="./Scripts/script.js" defer></script>
+</head>
+
+<body class="flex flex-col items-center justify-center h-screen bg-main">
+    <!-- Toast -->
+    <div class="hidden flex-col items-center gap-5 fixed w-70 h-17 px-3 py-3 bg-blue-600/9 rounded-xl top-2 left-3 z-50 toast">
+        <div class="flex items-center gap-5 mt-1.5">
+            <img class="size-7 toast__image"  alt="">
+            <p class="sm:text-2xl text-white font-bold toast__text">Todo successfully added!</p>
+        </div>
+        <div class="w-full h-1.5 absolute bottom-0 rounded-full toast__progress--wrapper">
+            <div class="w-full h-full toast__progress rounded-full">
+                
+            </div>
+        </div>
+    </div>
+
+    <!-- Body -->
+    <main class="container mx-auto h-200 z-0">
+        <header class="flex justify-center pt-10">
+            <h1 class="font-bold text-white text-7xl cursor-default hover:tracking-widest transition-all duration-300">
+                ToDoList</h1>
+        </header>
+        <main class="flex flex-col items-center mt-20">
+            <article class="flex flex-col gap-6 w-150 ">
+                <header class="flex justify-between items-center px-6 py-5 border-4 border-blue-600 rounded-3xl">
+                    <div class="flex flex-col gap-3">
+                        <div>
+                            <p class="text-white font-black text-4xl">Todo Done</p>
+                            <p class="text-white font-black text-lg">Keep it up!</p>
+                        </div>
+                        <div class="w-85 h-3 rounded-full bg-blue-600/9">
+                            <div
+                                class="h-3 rounded-tl-full rounded-full bg-blue-600 transition-all duration-300 progress">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex gap-1 justify-center items-center w-30 h-30 rounded-full bg-blue-600/9">
+                        <p class="text-white font-black text-4xl doneToDo">0</p>
+                        <span class="text-white font-black text-2xl">/</span>
+                        <p class="text-white font-black text-4xl allToDo">0</p>
+                    </div>
+                </header>
+                <main class="flex flex-col gap-3.5">
+                    <button
+                        class="text-white bg-blue-700 hover:bg-blue-500 focus:ring-blue-500 focus:ring-3  w-full h-10 rounded-xl cursor-pointer transition-all duration-300 openModal">AddToDo</button>
+                    <div class="flex flex-col gap-1 todo__container">
+
+
+                    </div>
+                </main>
+                <footer></footer>
+            </article>
+        </main>
+    </main>
+
+    <!-- Modal -->
+    <div class="fixed justify-center items-center w-screen h-screen bg-black/2 backdrop-blur-xl modal hidden">
+        <div class="flex gap-5 flex-col text-white bg-modal w-100 h-76 px-3 py-3 rounded-xl relative shadow-3xl">
+            <header class="flex justify-center w-full">
+                <h2 class="text-3xl font-black">Add ToDo</h2>
+            </header>
+            <main class="flex flex-col gap-2 justify-center items-center mt-2">
+                <input
+                    class=" bg-main rounded-xl w-full h-13 focus:border-blue-500 focus:border-2  border-2 border-transparent outline-none pl-2 py-0.5 text-sm transition-all duration-300 title__input"
+                    type="text" placeholder="Title...">
+                    <p class="text-left w-full text-red-600 pl-2.5 text-sm hidden title__alert">You have to type a title</p>
+                <input
+                    class=" bg-main rounded-xl w-full h-13 focus:border-blue-500 focus:border-2  border-2 border-transparent outline-none pl-2 py-0.5 text-sm transition-all duration-300 description__input"
+                    type="text" placeholder="Description...">
+            </main>
+            <footer class="flex gap-1.5 bottom-3 absolute">
+                <button
+                    class="text-1 h-11 w-22  hover:bg-blue-500 focus:ring-blue-500 focus:ring-3 bg-blue-700 rounded-xl px-1.5  text-sm transition-all duration-300 cursor-pointer submit__btn">Confirm</button>
+                <button
+                    class="text-1 h-11 w-22 hover:bg-red-600/7 focus:ring-red-500 focus:ring-3 rounded-xl px-1.5  text-sm transition-all duration-300 cursor-pointer close__btn">
+                    <p class="text-red-500">Cancle</p>
+                </button>
+            </footer>
+        </div>
+    </div>
+</body>
+
+</html>
