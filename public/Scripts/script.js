@@ -80,6 +80,8 @@ function hideModal() {
     modal.classList.add('hidden');
 }
 function showModal() {
+    titleInput.value = '';
+    descriptionInpu.value = '';
     modal.classList.remove('hidden');
     modal.classList.add('flex');
 }
