@@ -36,7 +36,7 @@ function showToast(template) {
 
     switch (template) {
         case "add": {
-
+            toastProgress.classList.remove('bg-red-600')
             toastProgress.classList.add('bg-green-600')
             toastProgressWrapper.classList.add('bg-green-600/9')
             toastText.textContent = 'Todo successfully added!'
@@ -46,7 +46,7 @@ function showToast(template) {
             break;
         };
         case "delete": {
-
+            toastProgress.classList.remove('bg-green-600')
             toastProgress.classList.add('bg-red-600')
             toastProgressWrapper.classList.add('bg-red-600/9')
             toastText.textContent = 'Todo successfully deleted!'
@@ -80,8 +80,6 @@ function hideModal() {
     modal.classList.add('hidden');
 }
 function showModal() {
-    titleInput.value = '';
-    descriptionInpu.value = '';
     modal.classList.remove('hidden');
     modal.classList.add('flex');
 }
@@ -124,11 +122,11 @@ function createToDoes() {
     Todo.forEach(item => {
         todoContainer.insertAdjacentHTML('beforeend',
             `
-        <article class="flex items-center justify-between w-full h-20 bg-blue-600/9 rounded-xl px-5 py-4 leading-4">
-            <div class="flex items-center gap-4">
-                <div class="flex justify-center items-center w-10 h-10 rounded-xl bg-blue-600/9 text-transparent ${item.isDone ? 'text-white bg-green-600' : ''}">
+        <article class="max-sm:px-2 flex items-center justify-between w-full h-20 bg-blue-600/9 rounded-xl px-5 py-4 leading-4">
+            <div class=" max-sm:gap-2 flex items-center gap-4">
+                <div class="max-sm:w-6 max-sm:h-6 flex justify-center items-center w-10 h-10 rounded-xl bg-blue-600/9 text-transparent ${item.isDone ? 'text-white bg-green-600' : ''}">
                                     <span>
-                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                        <svg w-20 xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
                                             stroke-width="6" stroke="currentColor" class="size-4">
                                             <path stroke-linecap="round" stroke-linejoin="round"
                                                 d="m4.5 12.75 6 6 9-13.5"></path>
@@ -136,14 +134,14 @@ function createToDoes() {
                                     </span>
                 </div>
                 <div class="flex flex-col gap-1 text-white">
-                                    <p class="font-black text-xl">${item.title}</p>
-                                    <p class="font-light text-xs"> ${item.date}</p>
+                                    <p class="max-sm:text-[14px] font-black text-xl">${item.title}</p>
+                                    <p class="max-sm:text-[9px] font-light text-xs"> ${item.date}</p>
                 </div>
             </div>
-            <div class="flex gap-1.5">
-                <button class="flex justify-center items-center w-10 h-10 rounded-full bg-yellow-500/9 cursor-pointer text-yellow-600 hover:bg-yellow-600/9 transition-all duration-300 edit" data-index="${item.id}"><i class="fa-solid fa-pen-to-square"></i></button>
-                <button class="flex justify-center items-center w-10 h-10 rounded-full bg-red-500/9 cursor-pointer text-red-600 hover:bg-red-600/9 transition-all duration-300 delete" data-index="${item.id}"><i class="fa-solid fa-trash"></i></button>
-                <button class="flex justify-center items-center w-10 h-10 rounded-full bg-green-500/9 cursor-pointer text-green-600 hover:bg-green-600/9 transition-all duration-300 done" data-index="${item.id}"><i class="fas fa-check-circle"></i></button>
+            <div class="flex gap-2">
+                <button class="max-sm:text-xs max-sm:w-6 max-sm:h-6 max-sm:py-2 max-sm:px-2  flex justify-center items-center w-10 h-10 rounded-full bg-yellow-500/9 cursor-pointer text-yellow-600 hover:bg-yellow-600/9 transition-all duration-300 edit" data-index="${item.id}"><i class="fa-solid fa-pen-to-square"></i></button>
+                <button class="max-sm:text-xs max-sm:w-6 max-sm:h-6 max-sm:py-2 max-sm:px-2  flex justify-center items-center w-10 h-10 rounded-full bg-red-500/9 cursor-pointer text-red-600 hover:bg-red-600/9 transition-all duration-300 delete" data-index="${item.id}"><i class="fa-solid fa-trash"></i></button>
+                <button class="max-sm:text-xs max-sm:w-6 max-sm:h-6 max-sm:py-2 max-sm:px-2  flex justify-center items-center w-10 h-10 rounded-full bg-green-500/9 cursor-pointer text-green-600 hover:bg-green-600/9 transition-all duration-300 done" data-index="${item.id}"><i class="fas fa-check-circle"></i></button>
             </div>
         </article>
         `

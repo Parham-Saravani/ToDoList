@@ -12,7 +12,7 @@
 
 <body class="flex flex-col items-center justify-center h-full bg-main">
     <!-- Toast -->
-    <div class="hidden flex-col items-center gap-5 fixed w-70 h-17 px-3 py-3 bg-toast rounded-xl top-2 left-3 z-50 toast">
+    <div class="hidden flex-col items-center gap-5 fixed w-70 h-17 px-3 py-3 bg-toast rounded-xl top-3 left-3 z-50 toast">
         <div class="flex items-center gap-5 mt-1.5">
             <img class="size-7 toast__image"  alt="">
             <p class="text-white font-bold toast__text">Todo successfully added!</p>
@@ -24,7 +24,7 @@
         </div>
     </div>
 
-    <!-- Body -->
+    <!-- content -->
     <main class="container mx-auto h-200 z-0">
         <header class="flex justify-center pt-10">
             <h1 class="max-sm:text-5xl font-bold text-white text-7xl cursor-default hover:tracking-widest transition-all duration-300">
@@ -32,22 +32,22 @@
         </header>
         <main class="flex flex-col items-center mt-20">
             <article class="max-sm:px-4 max-sm:w-full flex flex-col gap-6 w-150 ">
-                <header class="max-sm:gap-2 flex justify-between items-center px-6 py-5 border-4 border-blue-600 rounded-3xl">
+                <header class="max-sm:px-4 max-sm:gap-2 flex justify-between items-center px-6 py-5 border-4 border-blue-600 rounded-3xl">
                     <div class="flex flex-col gap-3">
                         <div>
                             <p class="max-sm:text-xl text-white font-black text-4xl">Todo Done</p>
                             <p class="max-sm:text-xs text-white font-black text-lg">Keep it up!</p>
                         </div>
-                        <div class="max-sm:w-40 max-sm:h-2 w-85 h-3 rounded-full bg-blue-600/9">
+                        <div class="max-sm:w-46 max-sm:h-2 w-85 h-3 rounded-full bg-blue-600/9">
                             <div
                                 class="h-3 rounded-tl-full rounded-full bg-blue-600 transition-all duration-300 progress">
                             </div>
                         </div>
                     </div>
-                    <div class="max-sm:w-20 max-sm:h-20 flex gap-1 justify-center items-center w-30 h-30 rounded-full bg-blue-600/9">
-                        <p class="max-sm:text-xl text-white font-black text-4xl doneToDo">0</p>
-                        <span class="max-sm:text-xl text-white font-black text-2xl">/</span>
-                        <p class="max-sm:text-xl text-white font-black text-4xl allToDo">0</p>
+                    <div class="max-sm:w-18 max-sm:h-18 flex gap-1 justify-center items-center w-30 h-30 rounded-full bg-blue-600/9">
+                        <p class="max-sm:text-[16px] text-white font-black text-4xl doneToDo">0</p>
+                        <span class="max-sm:text-[16px] text-white font-black text-2xl">/</span>
+                        <p class="max-sm:text-[16px] text-white font-black text-4xl allToDo">0</p>
                     </div>
                 </header>
                 <main class="flex flex-col gap-3.5">
