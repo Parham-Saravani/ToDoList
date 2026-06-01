@@ -27,10 +27,7 @@ This application helps users manage their daily tasks through a clean and intuit
 
 ## 🚀 Live Demo
 
-Coming Soon...
-
-<!-- Replace with your deployment link -->
-<!-- https://your-demo-link.com -->
+https://todo-app-iota-ten-64.vercel.app/
 
 ---
 
