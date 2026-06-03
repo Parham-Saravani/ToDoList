@@ -6,6 +6,15 @@ This application helps users manage their daily tasks through a clean and intuit
 
 ---
 
+## Technologies Used
+
+![JavaScript](https://img.shields.io/badge/JavaScript-ES6-yellow)
+![HTML5](https://img.shields.io/badge/HTML5-Markup-orange)
+![CSS3](https://img.shields.io/badge/CSS3-Styling-blue)
+![TailwindCSS](https://img.shields.io/badge/TailwindCSS-v4-38BDF8)
+
+---
+
 ## ✨ Features
 
 - ✅ Add new tasks instantly
@@ -28,15 +37,6 @@ This application helps users manage their daily tasks through a clean and intuit
 ## 🚀 Live Demo
 
 https://to-do-list-virid-chi-99.vercel.app/
-
----
-
-## Technologies Used
-
-![JavaScript](https://img.shields.io/badge/JavaScript-ES6-yellow)
-![HTML5](https://img.shields.io/badge/HTML5-Markup-orange)
-![CSS3](https://img.shields.io/badge/CSS3-Styling-blue)
-![TailwindCSS](https://img.shields.io/badge/TailwindCSS-v4-38BDF8)
 
 ---
 
