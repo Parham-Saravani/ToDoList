@@ -31,25 +31,12 @@ https://to-do-list-virid-chi-99.vercel.app/
 
 ---
 
-## 🛠️ Built With
+## Technologies Used
 
-<p align="left">
-  <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank">
-    <img src="https://raw.githubusercontent.com/sabzlearn-ir/sabzlearn-ir/4d2a781931f79c747a132c28eae4ebfbb8eaa7d7/javascript-colored.svg" width="40" height="40" alt="JavaScript"/>
-  </a>
-
-  <a href="https://developer.mozilla.org/en-US/docs/Glossary/HTML5" target="_blank">
-    <img src="https://raw.githubusercontent.com/sabzlearn-ir/sabzlearn-ir/4d2a781931f79c747a132c28eae4ebfbb8eaa7d7/html5-colored.svg" width="40" height="40" alt="HTML5"/>
-  </a>
-
-  <a href="https://www.w3.org/TR/CSS/" target="_blank">
-    <img src="https://raw.githubusercontent.com/sabzlearn-ir/sabzlearn-ir/4d2a781931f79c747a132c28eae4ebfbb8eaa7d7/css3-colored.svg" width="40" height="40" alt="CSS3"/>
-  </a>
-
-  <a href="https://tailwindcss.com/docs" target="_blank">
-    <img src="https://raw.githubusercontent.com/Parham-Saravani/Parham-Saravani/117c3e04fa5a212738f84c5085a21f725ac7ed0d/Icons/Tailwind.svg" width="40" height="40" alt="Tailwind CSS"/>
-  </a>
-</p>
+![JavaScript](https://img.shields.io/badge/JavaScript-ES6-yellow)
+![HTML5](https://img.shields.io/badge/HTML5-Markup-orange)
+![CSS3](https://img.shields.io/badge/CSS3-Styling-blue)
+![TailwindCSS](https://img.shields.io/badge/TailwindCSS-v4-38BDF8)
 
 ---
 
